@@ -4,7 +4,7 @@ require_once("funcs.php");
 //1.  DB接続します
 try {
   //Password:MAMP='root',XAMPP=''
-  $pdo = new PDO('mysql:dbname=gs_db;charset=utf8;host=mysql57.tionbsm.sakura.ne.jp','tionbsm','epsrnd6p');//xampの設定がrootがユーザー名パスワードなし
+  $pdo = new PDO('mysql:dbname=tionbsm_gs_db;charset=utf8;host=mysql57.tionbsm.sakura.ne.jp','tionbsm','******');//xampの設定がrootがユーザー名パスワードなし
 } catch (PDOException $e) {
   exit('DBConnection Error:'.$e->getMessage());
 }
